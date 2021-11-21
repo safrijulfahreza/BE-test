@@ -5,7 +5,7 @@
  * Expected Result:
  * [1, 2, 3, 4, 5]
  */
-const data = [1, 4, 2, 3, 5, 3, 2, 4];
+const data = [1, 4, 2, 3, 5, 3, 2, 3, 4];
 
 function result(data) {
   // Your Code Here
@@ -17,6 +17,9 @@ function result(data) {
     }
   }
   return results;
+
+  // other solution
+  // return [...new Set(data)].sort();
 }
 
 console.log(result(data));
